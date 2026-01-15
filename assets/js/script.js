@@ -49,3 +49,21 @@ searchInput.addEventListener('keypress',
         )
     }
 )
+
+ambilData(url).then(
+    characters => {
+        characters.forEach(
+            character => {
+                if (character) {
+                    const card = elementor('div', [['class', 'card']], undefined, charactersContainer)
+                    const cardHeader = elementor('div', [['class', 'card-header']], undefined, card)
+                    const cardHeaderImg = elementor('img', [['src', character.image], ['class', 'card']], undefined, card)
+                    const cardBody = elementor('div', [['class', 'card-body']], undefined, card)
+                    const characterName = elementor('h4', [], character.name, cardBody)
+                }
+            }
+        )
+    }
+)
+    .catch(
+)
