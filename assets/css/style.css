@@ -21,32 +21,34 @@ img {
     gap: 1rem;
 }
 
-.character-container {
+.characters-container {
     padding: 25px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
+    gap: 25px;
 }
 
 .card {
     max-width: 400px;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
+    /* box-shadow: 4px 4px 10px; */
+    overflow: hidden;
     gap: 1rem;
-    box-shadow: 4px 4px 10px;
 
     .card-header{
-        border-bottom: 1px solid rgba(0, 0, 0, 0.400);
-        overflow: hidden;
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.400); */
     }
     
     .card-body{
-        padding: 1rem;
+        padding: 0 1rem 1rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 1rem;
     }
 }
