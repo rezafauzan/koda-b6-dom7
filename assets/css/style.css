@@ -38,10 +38,6 @@ img {
     /* box-shadow: 4px 4px 10px; */
     overflow: hidden;
     gap: 1rem;
-
-    .card-header{
-        /* border-bottom: 1px solid rgba(0, 0, 0, 0.400); */
-    }
     
     .card-body{
         padding: 0 1rem 1rem 1rem;
