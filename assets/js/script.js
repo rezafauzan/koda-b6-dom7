@@ -25,7 +25,7 @@ const charactersContainer = document.getElementById('characters-container')
 
 let url = "https://rickandmortyapi.com/api/character/?name="
 
-searchInput.addEventListener('keypress',
+searchInput.addEventListener('input',
     input => {
         url = "https://rickandmortyapi.com/api/character/?name=" + input.target.value
         charactersContainer.innerHTML = ''
