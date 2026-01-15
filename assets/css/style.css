@@ -48,3 +48,14 @@ img {
         gap: 1rem;
     }
 }
+
+@media (max-width: 768px){
+    .characters-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+}
